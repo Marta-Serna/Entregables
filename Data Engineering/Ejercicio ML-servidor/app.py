@@ -54,13 +54,7 @@ def check_logs():
     return pd.read_sql("SELECT * FROM logs", con=engine).to_html()
 
 
+if __name__ == "__main__":
+    app.run(debug=True)
 
 
-
-
-
-
-
-
-
-app.run(debug=True)
